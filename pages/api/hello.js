@@ -3,5 +3,5 @@
 export default (req, res) => {
   res.statusCode = 200
 //   res.json(req)
-  res.json({ name: 'NO WAY' })
+  res.json({ name: 'NO WY' })
 }
