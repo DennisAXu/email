@@ -3,5 +3,5 @@
 export default (req, res) => {
   res.statusCode = 400
   //res.json(req)
-  res.json(JSON.stringify(req.query), JSON.stringify(req.body));
+  res.json("SUP", JSON.stringify(req.query), JSON.stringify(req.body));
 }
