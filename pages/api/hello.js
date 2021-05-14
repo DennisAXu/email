@@ -10,7 +10,7 @@ export default (req, res) => {
   res.statusCode = 200
   //res.json(req)
   memClient.createMem({
-    content: req.subject
+    content: "hello"
   })
   res.send("success");
 }
