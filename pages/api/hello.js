@@ -12,5 +12,5 @@ export default (req, res) => {
   memClient.createMem({
     content: "hello"
   })
-  res.send(req);
+  // res.send(req);
 }
