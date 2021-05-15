@@ -11,7 +11,7 @@ export default (req, res) => {
   //res.json(req)
   console.log(req);
   memClient.createMem({
-    content: "hello"
+    content: `${req.headers.subject}\n ${req.body.plain}`
   })
   res.send("done");
 }
