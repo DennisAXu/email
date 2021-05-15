@@ -13,7 +13,7 @@ export default (req, res) => {
   console.log(req.body)
   // console.log(req.body.plain);
   memClient.createMem({
-    content: "maybe this works"
+    content: req.body.headers.subject
   })
   res.send("done");
 }
