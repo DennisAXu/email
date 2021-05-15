@@ -10,7 +10,7 @@ export default (req, res) => {
   res.statusCode = 200
   //res.json(req)
   // console.log(req.headers.subject);
-  console.log(req.body)
+  console.log(req.body.headers)
   // console.log(req.body.plain);
   memClient.createMem({
     content: req.body.headers.subject
