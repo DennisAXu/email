@@ -9,8 +9,9 @@ const memClient = new MemClient({
 export default (req, res) => {
   res.statusCode = 200
   //res.json(req)
+  console.log(req);
   memClient.createMem({
     content: "hello"
   })
-  // res.send(req);
+  res.send("done");
 }
