@@ -13,7 +13,8 @@ export default async (req, res) => {
   console.log(req.body.headers.subject, typeof req.body.headers.subject)
   // console.log(req.body.plain);
   await memClient.createMem({
-    content: "this shit works"
+    content: `Subject: ${req.body.headers.subject}\n\n
+              Body: ${req.body.plain}`
   })
   res.send("done");
 }
