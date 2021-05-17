@@ -6,13 +6,13 @@ const memClient = new MemClient({
   apiKey: "3c37816e-c46c-4a55-8b99-f9c137d5c65c"
 });
 
-export default (req, res) => {
+export default async (req, res) => {
   res.statusCode = 200
   //res.json(req)
   // console.log(req.headers.subject);
   console.log(req.body.headers.subject, typeof req.body.headers.subject)
   // console.log(req.body.plain);
-  memClient.createMem({
+  await memClient.createMem({
     content: "this shit works"
   })
   res.send("done");
